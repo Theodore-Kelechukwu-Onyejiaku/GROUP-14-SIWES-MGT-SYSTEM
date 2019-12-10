@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Group 14 -  SIWES MGT SYSTEM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="Mycss.css">
+	<script src="jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body class="background1">
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top relative">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					SIWES MANAGEMENT PORTAL
+				</a>
+			</div>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html"> <span class="glyphicon glyphicon-home"></span> HOME</a></li>
+				<li class="active"><a href="Guide.html">Guide</a></li>
+				<li><a href="About Us.html">About Us</a></li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+</div> 
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="text-danger well well-sm boxshadow center">
+			    <div class="page-header">
+			        <h5 class="aligncenter"><strong><i class="fa fa-graduation-cap fa-2x fa-spin"></i>Students</strong></h5>
+			        <center><button onclick="drop1()"><span class="glyphicon glyphicon-chevron-down"></span></button></center>
+			    </div>	    
+                <div class="text-danger dropdowncontent" id="one">
+                    <ol type="1">
+                    	<li>Complete Section(Student's Profile) as soon as you obtain your log book.</li>
+                    	<li>Before commencing your training, make sure you have carefully read and understood the instructions given on the Code of Conduct for students on Industrial Attachment, (Section 2).</li>
+                    	<li>On commencing your training, obtain the information required on the industry's Profile(Section 3).</li>
+                    	<li>At the end of each day in training, record fully and clearly all functions carried out. (Attach, where necessary), briefly theory, sketches and diagrams for clarity. (Section 4).</li>
+                    	<li>At the end of each month in training, provide a brief summary of the month's activities(Section 5), and then submit the log book to your industry-based supervisor/trainer for, his/her necessary action.</li>
+                    	<li>At the end of training period, collect the log book in a sealed envelope from your industry-based supervisor/trainer.</li>
+                        <li>Submit the sealed envelope containing the log book to your school SIWES Coordinator within two weeks of the next semester.</li>    
+                    </ol>
+			        <center><button onclick="drop2()"><span class="glyphicon glyphicon-chevron-up"></span></button></center>
+                </div>
+			</div>
+		</div>
+		<div  class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="text-danger well well-sm boxshadow center">
+			    <div class="page-header">
+				   <h5 class="aligncenter"><strong><i class="fa fa-user-md fa-2x fa-spin"></i> Industry Based Supervisor/Trainer</strong></h5>
+				   <center><button onclick="drop3()"><span class="glyphicon glyphicon-chevron-down"></span></button></center>
+			    </div>
+			    <div class="text-danger dropdowncontent" id="two">
+			    	<ol type="one">
+			    		<li>Help the trainee-student provide the information under the Industry's Profile section.</li>
+			    		<li>At the end of each month in training of the student, receive log book  from the student, check the accuracy of his/his entries and then complete the appropriate portions of Section 5. Return the log book to the student. The student must make sure that these entries are what he/she should submit offline.</li>
+			    		<li>On the compeletion  of the training, obtain the log book from the student, complete the Terminal Section(Section 7), and then submit the log book to the student in sealed envelope to the school's SIWES Cordinator.</li>
+			    		<li>After this, head on to your account to approve student for final IT defence.</li>
+			    	</ol>
+			    	<center><button onclick="drop4()"><span class="glyphicon glyphicon-chevron-up"></span></button></center>
+			    </div>
+			</div>    
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			 <div class="text-danger well well-sm boxshadow center">
+			 	<div class="page-header">
+			 		<h5 class="aligncenter"><strong><i class="fa fa-book fa-2x fa-spin"></i> University-Based Training Staff</strong></h5>
+			 		<center><button onclick="drop5()"><span class="glyphicon glyphicon-chevron-down"></span></button></center>
+			 	</div>
+			 	<div class="text-danger dropdowncontent" id="three">
+			 		<ol type="1">
+			 			<li>On you monthly visit to the student-in-training, obtain the log book from him/her, verify that all necessary entries have been made, and then complete Section 6 of the log book</li>
+			 			<li>After the visit, head on to your account to apporove or decline student for final IT defence.</li>
+			 		</ol>
+			 		<center><button onclick="drop6()"><span class="glyphicon glyphicon-chevron-up"></span></button></center>
+			 	</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="Myjs.js"></script>
+</body>
+</html>

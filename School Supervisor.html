@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Group 14 -  SIWES MGT SYSTEM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="Mycss.css">
+	<script src="jquery.js"></script>
+</head>
+<body class="background1">
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top relative">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					SIWES MANAGEMENT PORTAL
+				</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="index.html"> <span class="glyphicon glyphicon-home"></span> HOME</a></li>
+				<li><a href="Guide.html">Guide</a></li>
+				<li><a href="About Us.html">About Us</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>  
+
+<div class="container">
+  <div class="">
+    <div class="row">
+	    <div class="col-sm-3 col-xs-1 col-md-4 col-lg-4">	
+	    </div>
+
+	    <div class="col-sm-4 col-xs-10 col-md-4 col-lg-4">
+	        <div class="text-center text-danger well well-xs"><i class="fa fa-user-md fa-2x"><br>Welcome Supervisor!!!</i></div>
+		    <form name="supervisor" class="form">
+			     <div class="form-group">
+				    <input class="form-control" type="text" name="full name" placeholder="full name" required>
+			     </div>
+			     <div class="form-group">
+				    <input class="form-control" type="text" name="username" placeholder="preferred username" required>
+			     </div>
+			     <div class="form-group">
+				    <input class="form-control" type="password" name="firstpassword" placeholder="preferred password" required>
+			    </div>
+			    <div class="form-group">
+				    <input  class="form-control" type="password" name="secondpassword" placeholder="re-enter password" required>
+			    </div>
+			    <div class="form-group">
+			    	<input class="form-control" type="text" name="phonenumber" maxlength="11" placeholder="phone number">
+			    </div>
+                <div class="form-group">
+                    <label>Select Geo-political zone</label>
+                	<select name="location" class="form-control" id="l">
+                		<option value="south-east">South-East</option>
+                		<option value="south-west">South-West</option>
+                		<option value="south-south">South-South</option>
+                		<option value="north-east">North-East</option>
+                		<option value="north-west">North-West</option>
+                		<option value="north-central">North-Central</option>
+                	</select>
+                </div>
+                <div class="btn-group">
+                	<input onmouseover="first()" type="submit" class="btn btn-danger boxshadow" value="register">
+                	<input type="reset" class="btn btn-info boxshadow" value="clear">
+                </div>
+		    </form>
+	    </div>
+	    <div class="col-sm-3 col-xs-1 col-md-4 col-lg-4">	
+	    </div>
+	</div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="js/bootstrap.css"></script>
+<script type="text/javascript">
+	function first(){
+		a = document.supervisor.firstpassword.value;
+        b = document.supervisor.secondpassword.value;
+       if(a!==b){
+       	alert("Password Incorrect!");
+       	return false;
+       }
+	}
+</script>
+</html>
